@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilo/style05.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="estilo/mediaquery.css">
+</head>
+<body onresize="mudouTamanho()"> <!-- Monitorar o tamanho da tela com JS-->
+    <!-- Criando menus responsivos -->
+     <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção1</a></li>
+                <li><a href="#">Opção2</a></li>
+                <li><a href="#">Opção3</a></li>
+                <li><a href="#">Opção4</a></li>
+                <li><a href="#">Opção5</a></li>
+
+            </ul>
+        </menu>
+     </header>
+
+     <main>
+        <article>
+            <h2>Testando Medias Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Minima ad, itaque nemo doloribus blanditiis 
+                 quisquam voluptas magnam sint eveniet culpa expedita quae, iste similique 
+                molestias quasi, perferendis esse necessitatibus? Modi!
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Minima ad, itaque nemo doloribus blanditiis 
+                 quisquam voluptas magnam sint eveniet culpa expedita quae, iste similique 
+                molestias quasi, perferendis esse necessitatibus? Modi!
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Minima ad, itaque nemo doloribus blanditiis 
+                 quisquam voluptas magnam sint eveniet culpa expedita quae, iste similique 
+                molestias quasi, perferendis esse necessitatibus? Modi!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum!
+                 Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum!
+                 Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum!
+                 Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Alias, ipsum quam tenetur eius sint 
+                doloremque ea ullam dolorem deleniti saepe. 
+                Adipisci labore officia itaque 
+                necessitatibus qui dolorum odio, tempora harum
+            </p>
+        </article>
+
+     </main>
+
+     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+     </script>
+    
+</body>
+</html>
